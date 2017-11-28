@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SplitABill</string>
+    <string name="TotalAmount_Prompt">Enter Total Amount</string>
+    <string name="ContinueBtn_Prompt">Continue -></string>
+    <string name="TotalAmountLabel_Prompt">Total Amount:</string>
+    <string name="NumberOfPeople_Prompt">Select number of people.</string>
+    <string name="TipEditText_Prompt">Enter Tip here.</string>
+    <string name="TipEditLabel_Prompt">%</string>
+    <string name="PaymentLabel_Prompt">Payment per User:</string>
+    <string name="Payment_Prompt">00.00</string>
+    <string-array  name="NumberOfPeople_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>

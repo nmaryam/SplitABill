@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data class="TotalAmountBinding">
+    <variable
+        name="TotalAmountVariable"
+        type="com.example.dell.splitabill.TotalAmountModel"/>
+    <variable
+        name="ModelClickListener"
+        type="com.example.dell.splitabill.ClickEvent.ClickListener"/>
+</data>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:tag="layout/activity_main_0"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context="com.example.dell.splitabill.MainActivity">-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.splitabill.MainActivity">
+
+    <EditText
+        android:id="@+id/TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="@{TotalAmountVariable.totalAmountHint}"
+        android:text="@={TotalAmountVariable.totalAmount}"
+        android:inputType="number|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="274dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:elevation="24dp"
+        android:onClick="@{(v)->ModelClickListener.onClick()}"
+        android:text="@{TotalAmountVariable.continueButtonText}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalAmount" />
+</android.support.constraint.ConstraintLayout>
+<!--</android.support.constraint.ConstraintLayout>-->
+</layout>
